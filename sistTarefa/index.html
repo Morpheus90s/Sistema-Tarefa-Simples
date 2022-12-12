@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tarefas</title>
+
+     <!-------------------------------------------------------->
+    <!-------CSS LINK ------CSS LINK ------ CSS LINK----------->
+    <link rel="stylesheet" href="public/assets/css/style.css">
+
+     <!-------FONT LINK ------FONT LINK ------ FONT LINK----------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+    wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;
+    1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ba790ccc68.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="titulo">
+   <h1>Sistema de Tarefas-Simples</h1>
+  </div>
+   <br>
+  <div class="container">
+    <div class="top">
+      <input type="text" id="inpuTarefa" placeholder="Adicione uma nova tarefa">
+      <button id="btnAdd">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+
+    <ul id="lista">
+    </ul>
+  </div>
+
+  <div id="janelaEdit">
+    <button id="btnFechar">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h2 id="idTarefaEdic"></h2>
+    <hr>
+    <form>
+      <div class="form-linha">
+        <label for="nome">Nome</label>
+        <input type="text" id="inputEditName">
+      </div>
+      <div class="form-linha">
+        <button id="btnSalvar">Salvar</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="janelaEditFund"></div>
+
+</body>
+  <!-------JS LINK ------JS LINK ------ JS LINK----------->
+  <script type="text/javascript" src="public/assets/js/script.js"></script>
+</html>

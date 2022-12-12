@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color: rgba(0, 0, 0, 0.856);
+    --container-color: rgba(53, 50, 50, 0.74);
+    --text-color: rgb(255, 255, 255);
+    --div-color: rgba(90, 82, 82, 0.74);
+    --btn-color: rgba(61, 59, 59, 0.884);
+    --hover-color: #3c3a3a;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    align-self: center;
+    color: var(--text-color);
+}
+
+h1{
+    position: absolute;
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    width: 490px;
+    height: auto;   
+    padding: 1rem;
+    text-decoration: none;
+    margin-left: 33%;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background: var(--container-color);   
+    padding: 55px;
+    border-radius: 8px;
+}
+
+.top{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+
+.top input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 1.3rem;
+    background: var(--div-color);
+    color: var(--text-color);
+}
+
+.top button{
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    width: 65px;
+    height: 65px;
+    margin-left: 10%;
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.top button:hover{
+    background: var(--hover-color);
+}
+
+#lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista li{
+    padding: 20px;
+    background: var(--div-color);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.btns{
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    width: 38px;
+    height: 38px;
+    margin-left: 8px;
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.btns:hover{
+    background: var(--hover-color);
+}
+
+.textTarefa{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdit{
+    position: fixed;
+    top: 50%;
+    background: var(--div-color);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 200;
+    border: 1px solid transparent;
+    width: 415px;
+    border-radius: 12px;
+    display: none;
+}
+
+#janelaEdit.abrir{
+    display: block !important;
+} 
+
+#janelaEditFund{
+    position: fixed;
+    top: 0;
+    background: var(--container-color);
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;  
+}
+
+#janelaEditFund.abrir{
+   display: block !important;
+}
+
+#btnFechar{
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    background: var(--btn-color);
+    color: var(--text-color);
+    outline: none;
+    cursor: pointer;
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-linha{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+.form-linha label{
+    margin-bottom: 7px;
+}
+
+.form-linha input{
+    padding: 15px;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 1.2rem;
+    background: var(--div-color);
+    color: var(--text-color);   
+}
+
+.form-linha button{
+   background: var(--btn-color);
+   border: 1px solid transparent;
+   padding: 7px;
+   margin-bottom: 10px;
+   border-radius: 1rem;
+   color: var(--text-color);
+   cursor: pointer;
+   height: 50px;
+   font-size: 1.3rem;
+   outline: none;
+}
+
+.form-linha button:hover{
+    background: var(--hover-color);
+}
+
